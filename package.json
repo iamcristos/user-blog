@@ -8,7 +8,7 @@
     "start": "npm run build && node dist/app.js",
     "serve": "nodemon --exec babel-node lib/app.js",
     "test": "nyc mocha --require @babel/register --exit",
-    "coverage" : "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "express": "^4.16.4",
     "mocha": "^6.1.4",
     "nodemon": "^1.18.11",
+    "nyc": "^14.0.0",
     "supertest": "^4.0.2"
   },
   "devDependencies": {
